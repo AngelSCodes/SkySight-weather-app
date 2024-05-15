@@ -14,29 +14,30 @@
     <div class="weatherApp">
     <header>
        <div class="logo"></div>
+      
        <form>
        <input type="search" placeholder="Enter A City..." required id="search-input"/>
        <input type="submit" value="search" id="search-button"/> 
     </form>
     </header>
     <main>
-        <div class="search-result">
-        <h1>Pretoria</h1>
-        <p>Monday 13/05/2024 22:10</p>
-        <p>It feels cloudy.</p>
-    </div>
+        <div class="weather-app-details">
+      <div>
+        <h1 class="weather-app-city">Pretoria</h1>
+        <p class="daily-details">Monday 13/05/2024 22:10, cloudy.
+    <br/>
+    Humidity: <strong>35%</strong> WindSpeed: <strong>25km.h</strong>
+</p>
+</div>
     <div class="current-forecast">
-        ☁️ 15&deg;C
+       <div class="weather-icon">☁️</div>
+       <div class="weather-temparature"> 15&deg;</div>
+        <div class="temperature-unit">C</div>
     </div>
-    <div class="humidity-wind">
-        <span class="humidity">
-            Humidity: 35%
-        </span>
-        <span class="wind">
-            WindSpeed: 25km.h
-        </span>
-    </div>
-    </main>
+</div>
+</div>
+</main>
+
     <footer>
         This Project was coded by 
         <a href="https://github.com/AngelSCodes" target="_blank">

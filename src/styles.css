@@ -35,7 +35,43 @@ header{
     transition: all 200ms ease-in-out;
     cursor: pointer;
 }
+main{
+    padding: 30px 0;
+}
 
+.weather-app-details{
+    display: flex;
+    justify-content: space-between;
+}
+.weather-app-city{
+    margin: 0;
+    font-size: 38px;
+    line-height: 48px;
+}
+.daily-details{
+    font-size: 15px;
+    line-height: 25px;
+}
+.current-forecast{
+    display: flex;
+}
+
+.weather-icon{
+  font-size: 45px;
+  margin-top: 25px;  
+}
+.weather-temparature{
+    font-size: 90px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.temperature-unit{
+    font-size: 30px;
+    margin-top: 14px;
+}
+strong{
+    color: darkblue;
+}
 footer{
     border-top: 1px solid lightgrey;
     padding: 30px 0 0 0;
