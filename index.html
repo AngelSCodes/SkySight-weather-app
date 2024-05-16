@@ -15,7 +15,7 @@
     <header>
        <div class="logo"></div>
       
-       <form>
+       <form id="search-form">
        <input type="search" placeholder="Enter A City..." required id="search-input"/>
        <input type="submit" value="search" id="search-button"/> 
     </form>
@@ -23,7 +23,7 @@
     <main>
         <div class="weather-app-details">
       <div>
-        <h1 class="weather-app-city">Pretoria</h1>
+        <h1 class="weather-app-city" id="weather-app-city">Pretoria</h1>
         <p class="daily-details">Monday 13/05/2024 22:10, cloudy.
     <br/>
     Humidity: <strong>35%</strong> WindSpeed: <strong>25km.h</strong>
@@ -83,5 +83,6 @@
          Netlify</a>.
     </footer>
 </div>
+<script src="src/index.js"></script>
 </body>
 </html>
