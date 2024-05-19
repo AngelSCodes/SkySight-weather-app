@@ -7,6 +7,7 @@ let humidity = document.querySelector("#humidity");
 let windSpeed = document.querySelector("#windSpeed");
 let timeElement = document.querySelector("#time");
 let date = new Date(response.data.time *1000);
+let iconElement = document.querySelector("#weather-icon");
 
 
 
@@ -16,6 +17,7 @@ condition.innerHTML = response.data.condition.description;
 humidity.innerHTML = `${response.data.temperature.humidity}%`;
 windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
 timeElement.innerHTML = formatDate(date);
+iconElement.innerHTML = `<img src = "${response.data.condition.icon_url}" class= "weather-icon" />`;
 }
 
 function formatDate(date){

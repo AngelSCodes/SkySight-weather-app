@@ -58,14 +58,10 @@ main{
 }
 
 .weather-icon{
-  font-size: 50px;
-
-  background: darkblue;
-  margin: 20px 0 16px 20px;
-  border-radius: 50%; 
-  height: 70px;
-  width: 70px;
-  text-align: center;
+  height: 95px;
+  width: 95px;
+  margin-top: 10px; 
+  
 }
 .weather-temparature{
     font-size: 90px;
