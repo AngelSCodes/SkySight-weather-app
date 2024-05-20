@@ -3,6 +3,13 @@ body{
     background-image: url("https://res.cloudinary.com/dwjmszkur/image/upload/v1715804844/blueSky.jpg");
     background-size: cover;
 }
+#logo{
+display: block;
+ width: 250px;
+margin: 0 auto;
+
+}
+
 header{
     border-bottom: 1px solid lightgrey;
     padding: 0 0 30px 0;
@@ -61,7 +68,7 @@ main{
   height: 95px;
   width: 95px;
   margin-top: 10px; 
-  
+
 }
 .weather-temparature{
     font-size: 90px;
