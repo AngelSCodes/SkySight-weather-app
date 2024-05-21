@@ -113,8 +113,9 @@ display: block;
     
 }
 
-.daily-forecast-temparature strong{
-    color: darkblue 
+.weather-foreast-temparature-max{
+    color: darkblue;
+    font-weight: bold;
 }
 
 footer{
