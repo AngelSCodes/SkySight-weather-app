@@ -18,6 +18,8 @@ humidity.innerHTML = `${response.data.temperature.humidity}%`;
 windSpeed.innerHTML = `${response.data.wind.speed}km/h`;
 timeElement.innerHTML = formatDate(date);
 iconElement.innerHTML = `<img src = "${response.data.condition.icon_url}" class= "weather-icon" />`;
+
+getForecast(response.data.city);
 }
 
 function formatDate(date){
@@ -59,8 +61,17 @@ function displayCity(event) {
    searchCity(searchInput.value);
 }
 
-function displayForecast(){
-    
+function getForecast(city) {
+let apiKey = "ta0fa480a5ddb93fe2fa0b479bf3b70o";
+let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+axios.get(apiUrl).then(displayForecast);
+
+}
+
+function displayForecast(response){
+    console.log(response.data) 
+
+
 let forecastElement = document.querySelector("#forecast");
 let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
 let forecastHtml = "";
@@ -87,4 +98,4 @@ let searchFormInput = document.querySelector("#search-form");
 searchFormInput.addEventListener("submit", displayCity);
 
 searchCity("Pretoria");
-displayForecast();
+
