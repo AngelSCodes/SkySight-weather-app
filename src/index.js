@@ -58,7 +58,33 @@ function displayCity(event) {
 
    searchCity(searchInput.value);
 }
+
+function displayForecast(){
+    
+let forecastElement = document.querySelector("#forecast");
+let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+let forecastHtml = "";
+
+days.forEach(function(day) {
+    forecastHtml = 
+    forecastHtml +
+    `
+<div class="daily-weather-forecast">
+<div class="forecast-day">${day}</div>
+<div class="daily-weather-icon">☁️</div>
+<div class="daily-forecast-temparature">
+    <span class="weather-foreast-temparature-max">25&deg;</span>
+    <span class="weather-foreast-temparature-min">10&deg;</span>
+</div>
+</div>
+`;
+});
+forecastElement.innerHTML = forecastHtml;
+}
+
+
 let searchFormInput = document.querySelector("#search-form");
 searchFormInput.addEventListener("submit", displayCity);
 
 searchCity("Pretoria");
+displayForecast();
