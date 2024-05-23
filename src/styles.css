@@ -109,8 +109,9 @@ display: block;
 }
 
 .daily-weather-icon{
-    font-size: 35px;
-    
+   width: 50px;
+   height: 50px;
+   margin: 0 auto; 
 }
 
 .weather-foreast-temparature-max{
